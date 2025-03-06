@@ -19,7 +19,7 @@ To retrieve System information I used a combination of [OSHI](https://github.com
 ### Screenshots
 General Tab
 
-![image](https://github.com/user-attachments/assets/6b882cbb-90e0-426d-81f3-d6ececf645c8)
+![image](https://github.com/user-attachments/assets/dbd88f38-c47d-4e5e-a0d3-49fe4a58453a)
 
 Details Tab
 
@@ -27,7 +27,7 @@ Details Tab
 
 Storage Tab
 
-![image](https://github.com/user-attachments/assets/c315fb7e-7989-44d8-a034-5ecd660fa7df)
+![image](https://github.com/user-attachments/assets/9b12c2d3-eb13-4eab-ac4e-9a37359d7d48)
 
 
 ## License
