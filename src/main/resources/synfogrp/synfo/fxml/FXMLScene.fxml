@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" styleClass="main-anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="hboxTitle" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0" styleClass="hbox-bar" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="titleLbl" styleClass="title-lbl" text="Synfo" />
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnMin" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-min" text="—">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btn-exit" text="×" />
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="150.0" styleClass="left-vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <ToggleButton fx:id="sideBtn1" mnemonicParsing="false" onAction="#sidePressed" styleClass="side-button" text="General" />
+            <ToggleButton fx:id="sideBtn2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#sidePressed" styleClass="side-button" text="Details" textAlignment="CENTER" />
+            <ToggleButton fx:id="sideBtn3" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#sidePressed" styleClass="side-button" text="Storage" />
+         </children>
+      </VBox>
+      <VBox fx:id="firstPane" layoutX="247.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0" styleClass="toggle1-vbox" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-odd" VBox.vgrow="NEVER">
+               <children>
+                  <Label text="OS" />
+                  <TextField fx:id="txtOS" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="210.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-even">
+               <children>
+                  <Label text="Manufacturer" />
+                  <TextField fx:id="txtMan" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-odd">
+               <children>
+                  <Label text="Motherboard" />
+                  <TextField fx:id="txtMB" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="170.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-even">
+               <children>
+                  <Label text="Architecture" />
+                  <TextField fx:id="txtArc" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-odd">
+               <children>
+                  <Label text="Processor" />
+                  <TextField fx:id="txtCPU" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="50.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-even">
+               <children>
+                  <Label text="Graphics" />
+                  <TextField fx:id="txtGPU" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="90.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-odd">
+               <children>
+                  <Label text="Memory" />
+                  <TextField fx:id="txtMem" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="130.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-even">
+               <children>
+                  <Label text="Storage" />
+                  <TextField fx:id="txtSto" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="250.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-odd">
+               <children>
+                  <Label text="User" />
+                  <TextField fx:id="txtUser" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="290.0" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="hbox-even">
+               <children>
+                  <Label text="App Version" />
+                  <TextField fx:id="txtVer" editable="false" text="1.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="secondPane" prefHeight="200.0" prefWidth="100.0" styleClass="toggle2-vbox" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="CPU Model" />
+                        <TextField fx:id="cpumodel" editable="false" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="CPU Cores" />
+                        <TextField fx:id="cpucores" editable="false" HBox.hgrow="ALWAYS" />
+                        <Label layoutX="20.0" layoutY="18.0" text="CPU Threads" />
+                        <TextField fx:id="cputhreads" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="CPU Socket" />
+                        <TextField fx:id="cpusocket" editable="false" HBox.hgrow="ALWAYS" />
+                        <Label layoutX="20.0" layoutY="18.0" text="Architecture" />
+                        <TextField fx:id="cpuarc" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Memory Type" />
+                        <TextField fx:id="ramtype" editable="false" HBox.hgrow="ALWAYS" />
+                        <Label layoutX="20.0" layoutY="18.0" text="RAM Speed" />
+                        <TextField fx:id="ramspeed" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="115.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Select Core" />
+                        <ChoiceBox fx:id="coreselect" prefWidth="150.0" />
+                        <Label layoutX="20.0" layoutY="18.0" text="Base Speed" />
+                        <TextField fx:id="corespeed" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="GPU Model" />
+                        <TextField fx:id="gpumodel2" editable="false" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Total VRAM" />
+                        <TextField fx:id="vram2" editable="false" HBox.hgrow="ALWAYS" />
+                        <Label layoutX="20.0" layoutY="18.0" text="Driver Version" />
+                        <TextField fx:id="gpudriver2" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Net Adapter" />
+                        <TextField fx:id="netadapter2" editable="false" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="MAC Address" />
+                        <TextField fx:id="macaddress2" editable="false" HBox.hgrow="ALWAYS" />
+                        <Label layoutX="20.0" layoutY="18.0" text="Max Speed" />
+                        <TextField fx:id="maxNetSpeed" editable="false" layoutX="100.0" layoutY="18.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label id="network-thing" text="Current Network Interface" />
+                        <TextField fx:id="netinterface2" editable="false" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children></VBox>
+      <HBox fx:id="thirdPane" prefHeight="100.0" prefWidth="200.0" styleClass="toggle3-hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="storagePane" prefHeight="300.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle id="storageEmptyRect" fx:id="storageEmptyRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle id="storageFilledRect" fx:id="storageFilledRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" nodeOrientation="RIGHT_TO_LEFT" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle id="storageOuterRect" fx:id="storageOuterRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Label fx:id="usedStorageLabel" alignment="TOP_CENTER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" style="-fx-font-weight: none;" text="Label" />
+                        <Label fx:id="unusedStorageLabel" alignment="TOP_CENTER" layoutY="28.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" style="-fx-font-weight: none;" text="Label" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" prefHeight="50.0" prefWidth="100.0" text="Storage">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="40.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="memoryPane" prefHeight="300.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle id="storageEmptyRect" fx:id="memoryEmptyRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle id="storageFilledRect" fx:id="memoryFilledRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" nodeOrientation="RIGHT_TO_LEFT" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Rectangle id="storageOuterRect" fx:id="memoryOuterRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="300.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                        <Label fx:id="usedMemoryLabel" alignment="TOP_CENTER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" style="-fx-font-weight: none;" text="Label" />
+                        <Label fx:id="unusedMemoryLabel" alignment="TOP_CENTER" layoutY="28.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" style="-fx-font-weight: none;" text="Label" />
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" prefHeight="50.0" prefWidth="100.0" text="Memory">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

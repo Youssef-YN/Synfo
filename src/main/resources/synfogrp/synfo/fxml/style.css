@@ -1,0 +1,223 @@
+/* Main UI */
+.main-anchor{
+    -fx-background-color: transparent;
+}
+
+
+
+
+/* Hbox Bar */
+.hbox-bar{
+    -fx-padding: 0 15 0 15;
+    -fx-spacing: 10;
+    -fx-background-radius: 15 15 0 0;
+    -fx-background-color: #393E46;
+}
+
+.hbox-bar Button{
+    -fx-background-color: transparent;
+    -fx-pref-height: 30;
+    -fx-pref-width: 30;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+}
+.hbox-bar Button:hover{
+    -fx-background-color: rgba(255,255,255,0.05);
+}
+.title-lbl{
+    -fx-text-fill: #8d95a3;
+}
+
+
+
+/* Left Buttons */
+.left-vbox{
+    -fx-padding: 1 0 1 0;
+    -fx-spacing: 1;
+    -fx-background-image: url(../img/leftbg.png);
+}
+
+.side-button{
+    -fx-font-family: 'Century Gothic';
+    -fx-min-width: 150px;
+    -fx-min-height: 132px;
+    -fx-background-radius: none;
+    -fx-background-color: rgba(255, 255, 255,0);
+    -fx-font-size: 17.5;
+    -fx-text-fill: white;
+}
+
+.side-button:hover{
+    -fx-background-color: rgba(0, 0, 0,0.1);
+}
+.side-button:selected{
+    -fx-background-color: rgba(0, 0, 0,0.2);
+}
+
+
+
+
+/* General CSS (Toggle 1 CSS) */
+.toggle1-vbox{
+    -fx-effect: innershadow(gaussian, rgb(0, 0, 0) , 20 , 0 , 0 , 0 );
+    -fx-background-image: url(../img/bg.png);
+}
+
+.hbox-odd{
+    -fx-padding: 0 20 0 0;
+    -fx-spacing: 0;
+}
+.hbox-even{
+    -fx-padding: 0 20 0 0;
+    -fx-spacing: 0;
+}
+
+.hbox-odd:hover > Label{
+    -fx-effect: innershadow( gaussian , rgba(0,0,50,0.2) , 127 , 1 , 1 , 10 );
+}
+.hbox-even:hover > Label{
+    -fx-effect: innershadow( gaussian , rgba(0,0,50,0.2) , 127 , 1 , 1 , 10 );
+}
+
+.hbox-odd Label, .hbox-even Label{
+    -fx-font-family: 'Century Gothic';
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-min-width: 100; -fx-pref-width: 60; -fx-max-width: 60;
+    -fx-min-height: 40; -fx-pref-height: 40; -fx-max-height: 40;
+    -fx-alignment: center;
+}
+
+.hbox-odd TextField, .hbox-even TextField{
+    -fx-font-family: 'Verdana';
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-min-width: 330; -fx-pref-width: 330; -fx-max-width: 330;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-focus-color: white;
+    -fx-background-insets: 0;
+    -fx-alignment: center;
+    -fx-text-fill: rgb(217, 217, 217);
+    -fx-font-weight: bold;
+}
+
+
+
+
+/* CPU & GPU */
+.toggle2-vbox{
+    -fx-effect: innershadow(gaussian, rgb(0, 0, 0) , 20 , 0 , 0 , 0 );
+    -fx-background-image: url(../img/bg.png);
+    -fx-padding: 20 30 20 30;
+    -fx-spacing: 10;
+}
+.toggle2-vbox VBox{
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-background-radius: 10;
+}
+
+.toggle2-vbox VBox:hover{
+    -fx-background-color: rgba(10,10,10,0.2);
+}
+
+.toggle2-vbox VBox HBox{
+    -fx-padding: 0 10 0 10;
+    -fx-spacing: 5;
+    -fx-min-height: 35;
+    -fx-max-height: 35;
+    -fx-min-width: 390;
+    -fx-max-width: 390;
+}
+
+.toggle2-vbox VBox HBox Label{
+    -fx-font-family: 'Century Gothic';
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-min-width:75; -fx-pref-width: 75; -fx-max-width: 75;
+    -fx-min-height: 20; -fx-pref-height: 20; -fx-max-height: 20;
+    -fx-alignment: center;
+    -fx-font-size: 11;
+}
+
+.toggle2-vbox VBox HBox TextField{
+    -fx-font-family: 'Verdana';
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-min-height: 20; -fx-pref-height: 20; -fx-max-height: 20;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-focus-color: white;
+    -fx-background-insets: 0;
+    -fx-alignment: center;
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+}
+.toggle2-vbox VBox HBox ChoiceBox{
+    -fx-min-width: 102;
+    -fx-font-family: 'Verdana';
+    -fx-background-color: rgba(0,0,0,0.2);
+    -fx-min-height: 20; -fx-pref-height: 20; -fx-max-height: 20;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-focus-color: white;
+    -fx-background-insets: 0;
+    -fx-alignment: center;
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+}
+
+#network-thing{
+    -fx-min-width:150; -fx-pref-width: 150; -fx-max-width: 150;
+}
+
+.toggle3-hbox{
+    -fx-effect: innershadow(gaussian, rgb(0, 0, 0) , 20 , 0 , 0 , 0 );
+    -fx-background-image: url(../img/bg.png);
+    -fx-padding: 25 30 25 30;
+    -fx-spacing: 10;
+}
+
+.toggle3-hbox VBox Label{
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(255,255,255,0.8);
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.toggle3-hbox VBox Label{
+    -fx-text-alignment: center;
+}
+
+.toggle3-hbox VBox Rectangle{
+    -fx-stroke: transparent;
+    -fx-arc-height: 20;
+    -fx-arc-width: 20;
+    -fx-fill: rgba(0,0,0,0.2);
+}
+
+.toggle3-hbox Pane Rectangle{
+    -fx-stroke: transparent;
+    -fx-arc-height: 20;
+    -fx-arc-width: 20;
+    -fx-fill: rgba(0,0,0,0.2);
+}
+
+.toggle3-hbox Pane{
+    -fx-alignment: center;
+    -fx-tile-alignment: center;
+}
+
+#storageOuterRect{
+    -fx-translate-x: 45;
+}
+
+#storageEmptyRect{
+    -fx-translate-x: 45;
+    -fx-fill: transparent;
+}
+
+#storageFilledRect{
+    -fx-translate-x: 45;
+    -fx-fill: rgba(100,230,150,0.5);
+}
