@@ -1,5 +1,5 @@
-# Synfo by Youssef YN.
-A General System information application made in Java
+# Synfo
+A General System information application made in Java as a side project by Youssef-YN a software engineering student.
 ## UI
 The Graphical user interface is made using Java FX.
 The main elements were made using Scene Builder to generate an FXML File which was later on imported to my project.
@@ -17,15 +17,15 @@ To retrieve System information I used a combination of [OSHI](https://github.com
 - Live Storage and RAM usage indicator
 
 ## Screenshots
-# General Tab
+### General Tab
 
 ![image](https://github.com/user-attachments/assets/dbd88f38-c47d-4e5e-a0d3-49fe4a58453a)
 
-# Details Tab
+### Details Tab
 
 ![details](https://github.com/user-attachments/assets/9b2e2499-600b-4035-a1c6-5a77d1343ed9)
 
-# Storage Tab
+### Storage Tab
 
 ![image](https://github.com/user-attachments/assets/9b12c2d3-eb13-4eab-ac4e-9a37359d7d48)
 
